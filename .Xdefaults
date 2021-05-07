@@ -1,0 +1,73 @@
+! ~/.Xdefaults
+
+...
+*foreground: #ebebeb
+*background: #101012
+
+!black
+*color0: #1f1f1f
+*color8: #4d4d4d
+!redc
+*color1: #a54242
+*color9: #cc6666
+!green
+*color2: #b7ce42
+*color10: #bde077
+!yellow
+*color3: #fea63c
+*color11: #ffe863
+!blue
+*color4: #66aabb
+*color12: #aaccbb
+!magenta
+*color5: #b7416e
+*color13: #bb4466
+!cyan
+*color6: #5e7175
+*color14: #a3babf
+!white
+*color7: #ddeedd
+*color15: #6c887a
+...
+
+! urxvt settings
+URxvt*letterSpace: 0
+URxvt*allow_bold: false
+
+URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
+URxvt.matcher.button: 1
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: ,open
+URxvt.url-select.underline: true
+
+! disable the bell
+URxvt.insecure: false
+
+! normal copy/paste keybindings
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+! scrolling options and cursor style
+URxvt*saveLines: 300000
+URxvt.scrollBar_right: false
+URxvt*scrollstyle: plain
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+URxvt*cursorColor: #4e9a06
+
+URxvt.tabbedex.autohide: yes
+URxvt.tabbedex.tabbar-fg: 2
+URxvt.tabbedex.tabbar-bg: 0
+URxvt.tabbedex.tab-fg: 10
+URxvt.tabbedex.tab-bg: 0
+URxvt.tabbedex.title: yes
+URxvt.tabbedex.new-button: no
+
+URxvt.transparent: true
+! URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt.shading: 10
+
+! Keybinding for fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
+
