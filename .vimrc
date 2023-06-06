@@ -99,8 +99,6 @@ function! ListToggle()
     endif
 endfunction
 
-" Print syntax highlighting (to pdf/html/printer)
-set printoptions+=syntax:y
 
 " Show matching parenthesis
 set showmatch
@@ -268,7 +266,7 @@ map <silent> <leader>fz :FZF ~/Documents/zettel<cr>
 " Simple wrapper around the internal profiler
 func Profile()
     profile start ~/vim-profile.log
-
+    profile func *
     profile file *
     autocmd QuitPre * profile stop
 endfunc
